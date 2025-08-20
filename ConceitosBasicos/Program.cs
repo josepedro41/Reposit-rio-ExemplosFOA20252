@@ -9,7 +9,7 @@ Console.WriteLine("Olá " + nome + ". A idade informada foi {0}", idade);// idad
 idade *= 2; // idade = idade * 2 
 Console.WriteLine($"A nova idade é {idade++}"); //40
 Console.WriteLine($"A nova idade é {++idade}"); //42
-*/
+
 //altere o programa para que solicite ao usuário informar o seu salário e ao final informe o desconto de IRPF de acordo com o salário informado. Utilize a tabela oficial de descontos de IRPF do Brasil.
 
 try
@@ -42,4 +42,10 @@ catch (Exception e)
     Console.WriteLine("Ocorreu um erro. Entre em contato  com o suporte técnico.");
     Console.WriteLine(e.ToString());
 }
+*/
 
+using ConceitosBasicos.uteis;
+
+SomaDoisNumeros somaDoisNumeros;
+somaDoisNumeros =  new SomaDoisNumeros();
+somaDoisNumeros.Somar(20, 22);
