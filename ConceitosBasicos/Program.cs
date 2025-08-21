@@ -49,3 +49,7 @@ using ConceitosBasicos.uteis;
 SomaDoisNumeros somaDoisNumeros;
 somaDoisNumeros =  new SomaDoisNumeros();
 somaDoisNumeros.Somar(20, 22);
+
+MetroMilimetros metroMilimetros = new MetroMilimetros();
+double milimetros = metroMilimetros.Converter(1.8);
+Console.WriteLine(milimetros);
