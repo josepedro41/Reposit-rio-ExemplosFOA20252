@@ -44,8 +44,7 @@ catch (Exception e)
 }
 */
 
-using ConceitosBasicos.uteis;
-
+/*
 SomaDoisNumeros somaDoisNumeros;
 somaDoisNumeros =  new SomaDoisNumeros();
 somaDoisNumeros.Somar(20, 22);
@@ -53,3 +52,20 @@ somaDoisNumeros.Somar(20, 22);
 MetroMilimetros metroMilimetros = new MetroMilimetros();
 double milimetros = metroMilimetros.Converter(1.8);
 Console.WriteLine(milimetros);
+*/
+
+using ConceitosBasicos.uteis;
+
+
+CalculaAumento calculaAumento;
+calculaAumento = new CalculaAumento();
+
+Console.WriteLine("Informe o Salário: ");
+decimal salario = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("Informe o percentual de  aumento: ");
+float percentual = float.Parse(Console.ReadLine());
+
+decimal valorAumento = calculaAumento.calcular(salario, percentual);
+
+Console.WriteLine($"Para o salário {salario:c2}, dado o percentual {percentual}, o novo valor do aumento será de: {valorAumento} resultando o novo salário de {(salario + valorAumento):c2} ");
